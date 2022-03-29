@@ -1,0 +1,6 @@
+konfig VLAN przez router:
+
+interface gigabitEthernet 0/0/1.22[1,2,4,6]
+encapsulation dot1Q 22[1,2,4,6]
+ip address [adres] [maska]
+potem po konfigu wszystkich 

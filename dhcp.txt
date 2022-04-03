@@ -1,0 +1,29 @@
+Pobieranie serwera: 
+sudo apt-get install isc-dhcp-server
+Plik defaultowy:
+/etc/default/isc-dhcp-server
+wpisać nazwę sprzętu w ipv4 można więcej po spacji
+Plik konfiguracyjny:
+/etc/dhcp/dhcpd.conf
+w option definitions common to... zmienić nazwę domeny w dyrektywie:
+
+żeby ustawić autorytatywność serwera odhashować opcję 
+#authoritative;
+
+główny konfig:
+53 linijka kodu
+odhashować wszystko z klamrą włącznie
+subnet... <- ustawianie adresu sieci
+range... <- ustawianie zakresu
+option domain-name-servers... <- ustawianie dns'ów (np. 8.8.8.8, 8.8.4.4 itd.)
+option domain-name <- ustawianie nazwy domeny
+option subnet-mask <- można wywalić/zostawić z #
+options routers <- ustawić najlepiej ip maszyny na której pracujemy lub zostawić w pizdu
+option broadcast-address <- ustawić zgodnie z maską
+default-lease-time <- ustawianie czasu dzierżawy
+max-lease-time <- ustawianie makymalnego czasu dzierżawy
+
+Przydatny filmik na yt:
+https://youtu.be/In8A-nUh7Jo
+Wikipedia:
+https://pl.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol

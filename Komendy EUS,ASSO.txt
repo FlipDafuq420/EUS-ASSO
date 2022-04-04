@@ -9,11 +9,14 @@ potem po konfigu wszystkich
 
 
 ASSO
-Samba:
+S(z)amba:
 zmienić nazwę grupy roboczej na dowolną, odkomentować:
 wins support = no
 dopisać pod tym:
 guest account = nobody
+
+nad workgroup napisać:
+protocol = SMB2
 
 w konfigu skopiować printers i przerobić na:
 [data]
@@ -24,3 +27,8 @@ wiriteable = yes
 guest ok = yes
 
 sprawdzając bierzemy ip za NATem
+żeby odblokować anonimowe logowanie:
+win+r
+gpedit
+szablony aministracyjne>sieć>stacja robocza Lanman
+włącz niezabezpieczone itd.

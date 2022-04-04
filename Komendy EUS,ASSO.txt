@@ -14,3 +14,13 @@ zmienić nazwę grupy roboczej na dowolną, odkomentować:
 wins support = no
 dopisać pod tym:
 guest account = nobody
+
+w konfigu skopiować printers i przerobić na:
+[data]
+comment = cokolwiek
+path = ścierzka udostepnianego katalogu
+browseable = yes
+wiriteable = yes
+guest ok = yes
+
+sprawdzając bierzemy ip za NATem

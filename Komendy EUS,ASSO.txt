@@ -5,7 +5,11 @@ encapsulation dot1Q 22[1,2,4,6]
 ip address [adres] [maska]
 potem po konfigu wszystkich 
 
-
+konfig VLAN statyczny (żywcem z teamsa):
+SW-0(config)# interface range fastEthernet 0/1 - 10
+SW-0(config-if-range)# switchport mode access
+SW-0(config-if-range)# switchport access vlan 222
+SW-0(config-if-range)# exit
 
 
 ASSO

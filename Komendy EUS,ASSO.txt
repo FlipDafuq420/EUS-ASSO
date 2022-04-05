@@ -13,7 +13,8 @@ SW-0(config-if-range)# exit
 
 żeby ustawić trunk'a:
 SW-0(config-if-range)# switchport mode trunk
-
+żeby podejrzeć konfiguracje:
+do show vlan brief
 
 ASSO
 S(z)amba:

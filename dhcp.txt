@@ -23,6 +23,23 @@ option broadcast-address <- ustawić zgodnie z maską
 default-lease-time <- ustawianie czasu dzierżawy
 max-lease-time <- ustawianie makymalnego czasu dzierżawy
 
+sudo dhcp-lease-list - pokazuje aktualnych klientów
+
+rezerwowanie adresów:
+81 linijka, nazwać jakoś, odkomantować razem z trzema poniżej
+w hardware ethernet wrzucić mac maszyny dla której rezerwujemy ip
+w fixed-address wpisać zarezerwowany ip
+
+ewentualnie w "A slightly different configuration [...]" dać na końcu:
+group "nazwa grupy"{
+wkleić to co powyżej 
+}
+
+UWAGA! żeby konfigurować to tą drugą metodą pierwszą trzeba z powrotem zakomentować lub usunąć w chuj całą
+
+jak coś nie działa to można zobaczyć co sie zjebało w logach komendą:
+grep dhcp -a /var/log/syslog
+
 Przydatny filmik na yt:
 https://youtu.be/In8A-nUh7Jo
 Wikipedia:

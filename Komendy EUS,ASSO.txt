@@ -1,3 +1,41 @@
+Tryby:
+urządzenie> User exec
+urządzenie# tryb uprzywilejowany
+urządzenie(config)# tryp konfinguracji
+
+by wejść do trybu uprzywilejowanego:
+enable
+do trybu konfiguracji:
+configure
+można lecieć skrótami lub tabem
+
+ctrl+shift+6 - przerywa szukania na DNS'ie
+
+show history - pokazuje historie komend
+
+hostname nazwa - zmienia nazwę urządzenia
+
+show run - pokazuje aktualny konfig
+
+write - zapisuje aktualną konfigurację
+
+do - pozwala wykorzystywać komendy z trybu niższego
+
+interface gigabitEthernet 0/0/0  - konfiguracja interfejsu
+
+ip address ipv4 maska - konfiguruje ip na routerze
+
+no shutdown - podnosi interfejs
+
+ip route 0.0.0.0 0.0.0.0 serial 0/1/1 lub ipv4 (gdzie serial swój napomiast ip sąsiada)
+jeżeli powyższą komendę poprzedzimy "no" (no ip route...) usuniemy to
+
+ip route adres_sieci maska adres_routera
+
+router rip
+router ospf numer_protokołu
+maska odworotna (blankietowa)
+
 konfig VLAN przez router:
 
 interface gigabitEthernet 0/0/1.22[1,2,4,6]
